@@ -19,6 +19,51 @@ CSS
 JS
 Bootstrap
 Git
+
+### Code Example
+===
+'''
+const firstNumberInput = document.getElementById('first-number');
+const secondNumberInput = document.getElementById('second-number');
+const calculateButton = document.getElementById('calculate-button');
+const resultElement = document.getElementById('result');
+
+
+function calculateSum() {
+  const firstNumber = Number(firstNumberInput.value);
+  const secondNumber = Number(secondNumberInput.value);
+
+  if (isNaN(firstNumber) || isNaN(secondNumber)) {
+    resultElement.textContent = 'Введите числа!';
+  } else {
+    // Считаем сумму чисел и выводим результат
+    const sum = firstNumber + secondNumber;
+    resultElement.textContent = `Сумма: ${sum}`;
+  }
+}
+
+calculateButton.addEventListener('click', calculateSum);
+
+const firstNumberInput = document.getElementById('first-number');
+const secondNumberInput = document.getElementById('second-number');
+const calculateButton = document.getElementById('calculate-button');
+const resultElement = document.getElementById('result');
+
+function calculateSum() {
+  const firstNumber = Number(firstNumberInput.value);
+  const secondNumber = Number(secondNumberInput.value);
+
+  if (isNaN(firstNumber) || isNaN(secondNumber)) {
+    resultElement.textContent = 'Введите числа!';
+  } else {
+  
+    const sum = firstNumber + secondNumber;
+    resultElement.textContent = `Сумма: ${sum}`;
+  }
+}
+calculateButton.addEventListener('click', calculateSum);
+'''
+
 ### Experience
 ===
 ### Education
